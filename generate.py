@@ -14,6 +14,7 @@ NAV = [
     ("/keepers/", "The Keepers"),
     ("/david-sang/", "David Sang"),
     ("/bridge-method/", "The Bridge Method"),
+    ("/pastor-training/", "Pastor & Leader Training"),
 ]
 
 def rel(path_from, target):
@@ -126,6 +127,12 @@ home_body = f"""
         <p>A prompt kit for pastors and leaders &mdash; how to translate energy/manifestation language into Christian language with AI, without losing theological accuracy.</p>
         <span class="go">Read the method &rarr;</span>
       </a>
+      <a class="card" href="pastor-training/">
+        <span class="tag">Training</span>
+        <h3>Pastor &amp; Leader Training</h3>
+        <p>A working wiki for those forming others, not just themselves &mdash; recognizing energy-language patterns without policing vocabulary.</p>
+        <span class="go">Read the training wiki &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
@@ -135,7 +142,6 @@ home_body = f"""
     <h2 class="section-title">Coming next</h2>
     <p style="color:var(--color-text-muted); max-width:60ch;">This library is still being built, in the open, one section at a time. Next up:</p>
     <ul class="roadmap">
-      <li><span class="vol">Pastor &amp; Leader Training</span><span>A working wiki for those forming others, not just themselves.</span></li>
       <li><span class="vol">Bridge Glossary &amp; Catalog</span><span>The full glossary entries and reference catalog behind the Bridge Method &mdash; still in draft review, pending independent pass before publication.</span></li>
     </ul>
   </div>
@@ -467,6 +473,46 @@ for every flag. Do not rewrite anything yourself -- only point at problems.</pre
 </section>
 """
 
+# ---------------------------------------------------------------------------
+# PASTOR & LEADER TRAINING
+# ---------------------------------------------------------------------------
+pastor_training_body = f"""
+<section class="hero" style="padding-bottom: var(--space-8);">
+  <div class="prose-wrap">
+    <p class="eyebrow">Training</p>
+    <h1 style="font-size: var(--text-2xl);">Pastor &amp; Leader Training</h1>
+    <p class="lede" style="font-size: var(--text-lg);">A working wiki for those forming others, not just themselves</p>
+    <p class="prose" style="margin-top: var(--space-6);">This is a cross-reference library for pastors and leaders &mdash; not a devotional for the general reader. Its purpose is narrow and practical: when someone you're discipling has come up through energy or manifestation-language content, this wiki lets you recognize the vocabulary and name the underlying mechanism without having to reverse-engineer it in the moment.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="prose-wrap prose">
+    <h3 class="sub-title">What this wiki is, and isn&rsquo;t</h3>
+    <p>Each entry pairs (a) a term-for-term glossary against Neo-Christian equivalents with (b) an independently reviewed severity read, so the pattern can be named quickly rather than re-derived from scratch every time it comes up in conversation. This page summarizes the wiki&rsquo;s method and standard; it is not a substitute for the full internal reference, and it does not reproduce the wiki&rsquo;s most severe source excerpts &mdash; those are handled separately, entry by entry, at the discretion of the people who maintain this library.</p>
+
+    <div class="callout">
+      <div class="label">Admission standard for new entries</div>
+      Every entry requires three things before it is placed: a glossary drafted by one session, an independent read-only theological review by a separate session, and a placement decision by the person responsible for this library. No entry is self-certified &mdash; the same session that drafts a glossary does not get to approve it. Verdict history stays attached to the entry rather than being erased on revision, so later readers can see exactly what was caught and corrected.
+    </div>
+
+    <h3 class="sub-title">How an entry works</h3>
+    <p>Every entry runs the same three-part shape: a short severity note describing what kind of claim the source material is making and why it matters, a row-by-row glossary that puts the source phrase, what it actually claims, and a Scripture-grounded equivalent side by side, and an independent read that checks whether the glossary&rsquo;s own claims are actually supported by its own evidence. The glossary is deliberately term-for-term &mdash; it names the claim being made rather than rewriting the source into something softer.</p>
+
+    <h3 class="sub-title">Recognizing the pattern, not policing the vocabulary</h3>
+    <p>Much of this material is not crude. The best-produced examples are calm, well-paced, and genuinely feel spiritual to someone sitting through them, with no obvious red flag in the delivery. The distinguishing test this wiki trains leaders to apply is not tone but a single question: does this material, followed to its logical end, keep the Creator and the creature distinct, or does it collapse them? Language about a person&rsquo;s dignity, worth, or potential is not automatically suspect. Language that relocates divine attributes &mdash; wisdom, provision, creative power &mdash; from God to the self as a stated identity, rather than a received gift, is the specific thing this wiki exists to help a leader name.</p>
+
+    <div class="callout">
+      <div class="label">Distribution is a judgment call, not a default</div>
+      Some source lines are severe enough that this project treats them as recognition training for leaders only &mdash; useful precisely because a trained leader needs to know what they sound like &mdash; and not safe to put in front of an untrained public audience even alongside a correction. That is a document-level placement decision, made entry by entry, not a rule this summary page overrides.
+    </div>
+
+    <h3 class="sub-title">The posture underneath the method</h3>
+    <p>The wiki exists because recognition is a skill, and skills are trainable. A leader who can name &ldquo;this reassigns God&rsquo;s provision to the self as an internal resource&rdquo; in one sentence, mid-conversation, can meet a person where they actually are instead of arguing with a vocabulary they don&rsquo;t yet have language for. That is the whole aim: not winning an argument about energy language, but being equipped to walk someone back toward a Source that was never actually them to begin with.</p>
+  </div>
+</section>
+"""
+
 pages = [
     ("index.html", "LIME Leadership \u2014 Formation & the Interpretive Bridge",
      "A working library of Scripture study, interpretive-bridge writing, and formation material from Lime Signalworks.",
@@ -486,6 +532,9 @@ pages = [
     ("bridge-method/index.html", "The Bridge Method \u2014 LIME Leadership",
      "A prompt kit for pastors and leaders: how to translate energy/manifestation-language content into Christian language with AI, without losing theological accuracy.",
      bridge_method_body, "/bridge-method/", 1),
+    ("pastor-training/index.html", "Pastor & Leader Training \u2014 LIME Leadership",
+     "A working wiki for pastors and leaders: recognizing energy-language patterns and naming the underlying mechanism without policing vocabulary.",
+     pastor_training_body, "/pastor-training/", 1),
 ]
 
 import os
