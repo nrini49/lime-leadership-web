@@ -98,7 +98,7 @@ home_body = f"""
       <a class="card" href="promises/">
         <span class="tag">Scripture Study</span>
         <h3>The Promises of Jesus</h3>
-        <p>Guideposts from the Road to Life &mdash; a promise-by-promise study moving forward from John 1 toward the end of Revelation. Volumes I through IV are ready now.</p>
+        <p>Guideposts from the Road to Life &mdash; a completed promise-by-promise study from John 1 to the end of Revelation, in five volumes.</p>
         <span class="go">Read the volumes &rarr;</span>
       </a>
       <a class="card" href="bezalel-promise/">
@@ -179,11 +179,18 @@ promises_body = f"""
       </div>
       <a class="btn" href="../assets/pdf/The_Promises_of_Jesus_Volume_IV.pdf">Read Volume IV (PDF)</a>
     </div>
+    <div class="volume-card">
+      <div>
+        <h3>Volume V &mdash; Revelation</h3>
+        <p>Fourteen promises across the seven churches and the final vision &mdash; presence, renewal, healing, and the last invitation in Scripture: let him who is thirsty come.</p>
+      </div>
+      <a class="btn" href="../assets/pdf/The_Promises_of_Jesus_Volume_V.pdf">Read Volume V (PDF)</a>
+    </div>
 
-    <h3 class="sub-title">What comes next</h3>
-    <ul class="roadmap">
-      <li><span class="vol">Volume V</span><span>Revelation &mdash; presence, renewal, healing, and &ldquo;Surely I am coming soon.&rdquo;</span></li>
-    </ul>
+    <div class="callout">
+      <div class="label">The walk is complete</div>
+      Five volumes, John 1 to Revelation 22. There is no Volume VI planned as part of this particular study &mdash; the road is finished. What stays open is the same posture practiced across all five: recognition, not generation.
+    </div>
 
     <div class="callout">
       <div class="label">How each promise is studied</div>
