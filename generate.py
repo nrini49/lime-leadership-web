@@ -98,7 +98,7 @@ home_body = f"""
       <a class="card" href="promises/">
         <span class="tag">Scripture Study</span>
         <h3>The Promises of Jesus</h3>
-        <p>Guideposts from the Road to Life &mdash; a promise-by-promise study moving forward from John 1 toward the end of Revelation. Volumes I, II, &amp; III are ready now.</p>
+        <p>Guideposts from the Road to Life &mdash; a promise-by-promise study moving forward from John 1 toward the end of Revelation. Volumes I through IV are ready now.</p>
         <span class="go">Read the volumes &rarr;</span>
       </a>
       <a class="card" href="bezalel-promise/">
@@ -172,10 +172,16 @@ promises_body = f"""
       </div>
       <a class="btn" href="../assets/pdf/The_Promises_of_Jesus_Volume_III.pdf">Read Volume III (PDF)</a>
     </div>
+    <div class="volume-card">
+      <div>
+        <h3>Volume IV &mdash; The Epistles</h3>
+        <p>Fourteen promises across eight letters &mdash; adoption, perseverance, grace, transformation, and a hope named living because it rests on a resurrection that already happened.</p>
+      </div>
+      <a class="btn" href="../assets/pdf/The_Promises_of_Jesus_Volume_IV.pdf">Read Volume IV (PDF)</a>
+    </div>
 
     <h3 class="sub-title">What comes next</h3>
     <ul class="roadmap">
-      <li><span class="vol">Volume IV</span><span>The Epistles &mdash; adoption, perseverance, grace, transformation, hope.</span></li>
       <li><span class="vol">Volume V</span><span>Revelation &mdash; presence, renewal, healing, and &ldquo;Surely I am coming soon.&rdquo;</span></li>
     </ul>
 
