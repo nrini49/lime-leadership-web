@@ -13,6 +13,7 @@ NAV = [
     ("/bezalel-promise/", "The Bezalel Promise"),
     ("/keepers/", "The Keepers"),
     ("/david-sang/", "David Sang"),
+    ("/bridge-method/", "The Bridge Method"),
 ]
 
 def rel(path_from, target):
@@ -119,6 +120,12 @@ home_body = f"""
         <p>A guarded, line-by-line translation of a worship song into energy-language &mdash; keeping God prior and external at every step.</p>
         <span class="go">Read the interpretation &rarr;</span>
       </a>
+      <a class="card" href="bridge-method/">
+        <span class="tag">Method &amp; Practice</span>
+        <h3>The Bridge Method</h3>
+        <p>A prompt kit for pastors and leaders &mdash; how to translate energy/manifestation language into Christian language with AI, without losing theological accuracy.</p>
+        <span class="go">Read the method &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
@@ -129,8 +136,7 @@ home_body = f"""
     <p style="color:var(--color-text-muted); max-width:60ch;">This library is still being built, in the open, one section at a time. Next up:</p>
     <ul class="roadmap">
       <li><span class="vol">Pastor &amp; Leader Training</span><span>A working wiki for those forming others, not just themselves.</span></li>
-      <li><span class="vol">The Bridge Method</span><span>The glossary and prompt kit behind every interpretive bridge in this library.</span></li>
-      <li><span class="vol">Multiverse Catalog</span><span>The fuller reference behind the metaphor language used throughout this work.</span></li>
+      <li><span class="vol">Bridge Glossary &amp; Catalog</span><span>The full glossary entries and reference catalog behind the Bridge Method &mdash; still in draft review, pending independent pass before publication.</span></li>
     </ul>
   </div>
 </section>
@@ -357,6 +363,110 @@ david_sang_body = f"""
 </section>
 """
 
+# ---------------------------------------------------------------------------
+# THE BRIDGE METHOD
+# ---------------------------------------------------------------------------
+bridge_method_body = f"""
+<section class="hero" style="padding-bottom: var(--space-8);">
+  <div class="prose-wrap">
+    <p class="eyebrow">Method &amp; Practice</p>
+    <h1 style="font-size: var(--text-2xl);">The Bridge Method</h1>
+    <p class="prose" style="margin-top: var(--space-6);">A prompt kit for pastors and leaders: how to translate energy/manifestation-language content into Christian language with AI &mdash; without losing either audience or theological accuracy. Built from the actual working method used on the LIME Bridge Document (glossary, 3&middot;6&middot;9 Code, Shore Protocol) &mdash; not a theory, a process run start to finish, independently reviewed, and corrected once for real theological flags.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="prose-wrap prose">
+
+    <h3 class="sub-title">What this is</h3>
+    <p>Many people encounter God-language through a New Age, law-of-attraction, or &ldquo;quantum manifestation&rdquo; on-ramp before they ever encounter Scripture. That audience already has language for grace, provision, identity, and rest &mdash; it&rsquo;s just pointed at the self instead of at God. The bridge method takes content written in that vocabulary and re-expresses the same structure, length, and emotional arc in Christian vocabulary, so a reader coming from either direction recognizes something true without feeling preached down to or tricked.</p>
+    <p>This is not a shortcut around theological care. It is a way to do the mechanical, repetitive part of the work &mdash; finding the parallel term, drafting the parallel sentence &mdash; fast, so a human leader can spend their attention on the judgment calls that actually require a human: is this claim true, is this framing honest, does this cross a line.</p>
+
+    <h3 class="sub-title">The method, in four steps</h3>
+    <p><b>Step 1 &mdash; Build the glossary first, never rewrite cold.</b> Before touching the source text, extract a literal term-for-term list: what does this vocabulary word actually claim, and what&rsquo;s the Christian equivalent of that same claim? Do this as its own pass, as a table, before any rewriting. Rewriting without a glossary first is how theological drift sneaks in unnoticed &mdash; you fix the sentence you&rsquo;re looking at and miss the pattern repeating three paragraphs later.</p>
+    <p><b>Step 2 &mdash; Rewrite with the same shape, not a new one.</b> Keep the paragraph count, the sentence rhythm, and the emotional arc of the original. Only the vocabulary and the underlying claim change. If the original meditation had six affirmations, the rewrite has six. This is what makes it feel like a translation instead of a replacement &mdash; the reader who knows the original recognizes its shape.</p>
+    <p><b>Step 3 &mdash; Know the actual trap.</b> The failure mode isn&rsquo;t using the word &ldquo;abundance&rdquo; or &ldquo;frequency.&rdquo; It&rsquo;s leaving the self in the position God belongs in. Energy-language content routinely frames the person as the source, the architect, the authority, or the destination (&ldquo;you have become the shore&rdquo;). The Christian correction isn&rsquo;t a synonym swap &mdash; it&rsquo;s putting God back in that grammatical position (&ldquo;the Father is the shore, and you are the one being carried toward it&rdquo;). Watch specifically for: self-as-source language, effort framed as the enemy of grace instead of ordinary good work, numerology/visualization mechanics surviving under new vocabulary, and borrowed weight from specific scripture (echoing Christ&rsquo;s exact words for a much smaller claim) without deciding on purpose whether that&rsquo;s intended.</p>
+    <p><b>Step 4 &mdash; Never let the AI grade its own work.</b> Whichever AI session drafts the rewrite should not be the one that approves it. Open a second, separate session with no memory of the drafting conversation and give it only the finished draft plus a rigorous review brief (Prompt C below). Treat its verdict as real input, not a formality &mdash; if it says CONCERNS, that&rsquo;s information, not an obstacle to route around. This is also just good practice with AI generally: one pass drafts, a separate pass checks, and a human makes the final call either way.</p>
+
+    <h3 class="sub-title">Three copy-paste prompts</h3>
+    <p>Use these in order. Paste your own source material where indicated.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-label">Prompt A &mdash; Build the glossary</div>
+      <pre>Read the attached text (a meditation script, teaching, or affirmation set written
+in energy/manifestation/law-of-attraction language). Do not rewrite it yet.
+
+Extract a literal term-for-term table: every energy/manifestation word or phrase
+that makes a claim, next to a Christian equivalent that makes the same emotional
+claim without putting the self in God's place. Where the raw language frames the
+self as source, architect, or authority, flag that explicitly and propose a
+correction that reframes the self as receiving rather than generating.
+
+Output only the table. No rewritten prose yet.</pre>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-label">Prompt B &mdash; Rewrite using the glossary</div>
+      <pre>Using the glossary table from the previous step, rewrite the attached source
+text. Preserve the exact paragraph count, sentence rhythm, and emotional arc of
+the original. Cut any comment-bait, calls to like/subscribe/comment, product
+plugs, or transcription artifacts that don't carry teaching content. Do not
+introduce new theological claims that aren't in the original or the glossary.
+
+Where you're not sure whether something is an intentional echo of a specific
+Bible verse or an accidental borrowing of weighty language for a smaller claim,
+flag it as an open choice for me to decide rather than deciding it yourself.</pre>
+    </div>
+
+    <div class="prompt-box">
+      <div class="prompt-label">Prompt C &mdash; Independent review (use in a FRESH session)</div>
+      <pre>You are an independent, read-only theological reviewer. You did not write this
+content and should not soften your findings to protect someone else's work.
+
+Review the attached rewritten text for: (1) any self-as-source or
+self-deification language that survived the conversion, (2) prosperity-gospel
+framing (effort treated as the enemy of grace, blessing framed as owed rather
+than gifted), (3) New Age mechanics (numerology, visualization techniques)
+surviving under new vocabulary, (4) any specific-scripture echo used without
+clear intent, (5) anything that would make either a Christian reader or an
+energy-language reader feel misled.
+
+Give a verdict of ENDORSE, CONCERNS, or REJECT, with specific line-level quotes
+for every flag. Do not rewrite anything yourself -- only point at problems.</pre>
+    </div>
+
+    <h3 class="sub-title">A worked example</h3>
+    <p>From the actual LIME glossary &mdash; four rows, as a starting reference, not a template to copy verbatim into unrelated content.</p>
+    <table class="generic-table">
+      <thead><tr><th>Energy / manifestation language</th><th>Christian equivalent</th></tr></thead>
+      <tbody>
+        <tr><td>quantum magnet</td><td>a new heart</td></tr>
+        <tr><td>frequency</td><td>grace / peace</td></tr>
+        <tr><td>the intelligence that handles your breath</td><td>the same hand that keeps your heart beating</td></tr>
+        <tr><td>I am the sovereign architect of my wealth</td><td>I rest in what has already been built for me, not what I build myself</td></tr>
+      </tbody>
+    </table>
+
+    <p><b>Before</b> (raw energy language): &ldquo;You are no longer the ship battling the waves. You have become the shore, where everything eventually arrives.&rdquo;</p>
+    <p><b>After</b> (corrected in review, self-as-destination flagged and fixed): &ldquo;You are no longer the ship battling the waves alone. You have found the harbor, and the harbor is not something you built &mdash; it was always the Father, holding the shore steady while you were still out on the water.&rdquo;</p>
+    <p><i>Same image, same length, same comfort &mdash; but the correction moved the self out of God&rsquo;s place. That&rsquo;s the whole method in one sentence.</i></p>
+
+    <h3 class="sub-title">Before you use this with a congregation</h3>
+    <ul>
+      <li>AI accelerates the mechanical work &mdash; finding the parallel term, drafting the parallel sentence. It does not carry theological authority. The judgment calls stay yours.</li>
+      <li>Always run Prompt C in a session that has no memory of drafting the content. An AI reviewing its own draft in the same conversation will tend to defend it.</li>
+      <li>Treat a CONCERNS verdict as real information. The actual LIME bridge document got CONCERNS on its first pass, with specific fixable flags &mdash; that&rsquo;s the system working, not failing.</li>
+      <li>Nothing produced this way should be treated as final, approved, or ready to teach from until you&rsquo;ve read every line yourself. That&rsquo;s the standing rule this whole method was built under, and it doesn&rsquo;t change because the process has more steps now.</li>
+    </ul>
+
+    <div class="callout">
+      <div class="label">Still being built</div>
+      A working glossary entry and a fuller reference catalog sit behind this method, both still in draft review and not yet placed in this library &mdash; per the same standing rule above: nothing goes public until it has had its own independent pass. Free to adapt this prompt kit for your own congregation or team&rsquo;s use.
+    </div>
+  </div>
+</section>
+"""
+
 pages = [
     ("index.html", "LIME Leadership \u2014 Formation & the Interpretive Bridge",
      "A working library of Scripture study, interpretive-bridge writing, and formation material from Lime Signalworks.",
@@ -373,6 +483,9 @@ pages = [
     ("david-sang/index.html", "David Sang: Energy-Language Interpretation \u2014 LIME Leadership",
      "A guarded, line-by-line energy-language interpretation of David Sang's Open Heavens Psalms, keeping God prior and external.",
      david_sang_body, "/david-sang/", 1),
+    ("bridge-method/index.html", "The Bridge Method \u2014 LIME Leadership",
+     "A prompt kit for pastors and leaders: how to translate energy/manifestation-language content into Christian language with AI, without losing theological accuracy.",
+     bridge_method_body, "/bridge-method/", 1),
 ]
 
 import os

@@ -206,6 +206,14 @@ h3.sub-title { font-family: var(--font-display); font-size: var(--text-xl); marg
 }
 .callout .label { font-weight: 700; color: var(--color-primary); text-transform: uppercase; font-size: var(--text-xs); letter-spacing: .08em; margin-bottom: var(--space-2); }
 
+/* Copy-paste prompt block (Bridge Method) */
+.prompt-box { background: var(--color-surface-offset); border: 1px solid var(--color-divider); border-radius: var(--radius-md); padding: var(--space-5); margin-block: var(--space-4); }
+.prompt-box .prompt-label { font-family: var(--font-display); font-style: italic; color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--text-base); }
+.prompt-box pre { white-space: pre-wrap; font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: var(--text-sm); line-height: 1.6; color: var(--color-text); margin: 0; }
+.generic-table { width: 100%; border-collapse: collapse; margin-block: var(--space-6); font-size: var(--text-sm); }
+.generic-table th, .generic-table td { text-align: left; padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--color-divider); vertical-align: top; }
+.generic-table th { background: var(--color-primary); color: #fff; font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .06em; }
+
 /* Interpretation pair (David Sang) */
 .pair { border-top: 1px solid var(--color-divider); padding-block: var(--space-8); }
 .pair:first-of-type { border-top: none; }
